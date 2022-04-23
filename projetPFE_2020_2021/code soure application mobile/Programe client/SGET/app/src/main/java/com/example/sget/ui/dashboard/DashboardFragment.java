@@ -30,13 +30,11 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
-
-
-
-
-
-
 import tech.gusavila92.websocketclient.WebSocketClient;
+
+
+/*** By El Raptor ***/
+
 
 public class DashboardFragment extends Fragment implements AdapterView.OnItemSelectedListener{
 
