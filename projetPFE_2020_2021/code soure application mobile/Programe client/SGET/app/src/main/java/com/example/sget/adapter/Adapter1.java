@@ -6,15 +6,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.TextView;
-
 import androidx.recyclerview.widget.RecyclerView;
-
-
 import com.example.sget.R;
 import com.example.sget.data.DataModel1;
-
 import java.util.ArrayList;
 
+/*** By El Raptor ***/
 
 public class Adapter1 extends RecyclerView.Adapter<Adapter1.MyViewHolder> {
 
