@@ -24,7 +24,7 @@ import javax.websocket.Session;
 import javax.websocket.server.ServerEndpoint;
 
 import org.apache.tomcat.util.codec.binary.Base64;
-
+/*** By El Raptor ***/
 @ServerEndpoint("/endpoint")
 public class SgetServer {
     
@@ -100,8 +100,8 @@ public class SgetServer {
 	    		message2 = message.substring(message1.length()+message0.length()+2,message.indexOf("#"));
 	    		message3 = message.substring(message2.length()+message1.length()+message0.length()+3,message.indexOf("$"));
 	    		message4 = message.substring(message3.length()+message1.length()+message2.length()+message0.length()+4,message.indexOf("%"));
-	    		message5 = message.substring(message4.length()+message3.length()+message1.length()+message2.length()+message0.length()+5,message.indexOf("¼"));
-	    		message6 = message.substring(message5.length()+message4.length()+message3.length()+message1.length()+message2.length()+message0.length()+6,message.indexOf("½"));
+	    		message5 = message.substring(message4.length()+message3.length()+message1.length()+message2.length()+message0.length()+5,message.indexOf("Â¼"));
+	    		message6 = message.substring(message5.length()+message4.length()+message3.length()+message1.length()+message2.length()+message0.length()+6,message.indexOf("Â½"));
 	    		
 	    		   System.out.println("onMessage::From=" + session.getId() + " Message=" + message);
 	               System.out.println("onMessage::From=" + session.getId() + " message1=" + message1);
@@ -153,7 +153,7 @@ public class SgetServer {
 
 						 						try {
 													 getTime(250);
-													 session.getBasicRemote().sendText("reussiteconnection"+"&"+data11+"#"+data21+"%"+data12+"$"+data22+"^"+data23+"¼"+getFiliere(data23)+"½"+getSemaine(data23)+"~");
+													 session.getBasicRemote().sendText("reussiteconnection"+"&"+data11+"#"+data21+"%"+data12+"$"+data22+"^"+data23+"Â¼"+getFiliere(data23)+"Â½"+getSemaine(data23)+"~");
 										           } catch (IOException e) {
 										                e.printStackTrace();
 										            }
@@ -168,7 +168,7 @@ public class SgetServer {
 			       	    	    	
 			  				}else {
 								 session.getBasicRemote().sendText("usernoexit"+"&");
-				    	        System.out.println("cet utilisateur néxiste pas");
+				    	        System.out.println("cet utilisateur nÃ©xiste pas");
 			  					data7 = "";
 			  	  				data8 = "";
 			  				}
@@ -338,22 +338,22 @@ public class SgetServer {
     		
     		case "insert" :
     		
-    																//	session.getBasicRemote().sendText("reception"+"@"+data1+"&"+data1+"#"+data2+"$"+data1+"%"+data2+"¼"+data1+"½"+data2+"~"+data1+"*"+data2+"¥");				          
+    																//	session.getBasicRemote().sendText("reception"+"@"+data1+"&"+data1+"#"+data2+"$"+data1+"%"+data2+"Â¼"+data1+"Â½"+data2+"~"+data1+"*"+data2+"Â¥");				          
 				 																															
     			
     	    message1 = message.substring(message0.length()+1,message.indexOf("&"));
     		message2 = message.substring(message1.length()+message0.length()+2,message.indexOf("#"));
     		message3 = message.substring(message2.length()+message1.length()+message0.length()+3,message.indexOf("$"));
     		message4 = message.substring(message3.length()+message1.length()+message2.length()+message0.length()+4,message.indexOf("%"));
-    		message5 = message.substring(message4.length()+message3.length()+message1.length()+message2.length()+message0.length()+5,message.indexOf("¼"));
-    		message6 = message.substring(message5.length()+message4.length()+message3.length()+message1.length()+message2.length()+message0.length()+6,message.indexOf("½"));
+    		message5 = message.substring(message4.length()+message3.length()+message1.length()+message2.length()+message0.length()+5,message.indexOf("Â¼"));
+    		message6 = message.substring(message5.length()+message4.length()+message3.length()+message1.length()+message2.length()+message0.length()+6,message.indexOf("Â½"));
     		message7 = message.substring(message6.length()+message5.length()+message4.length()+message3.length()+message1.length()+message2.length()+message0.length()+7,message.indexOf("~"));
     		message8 = message.substring(message7.length()+message6.length()+message5.length()+message4.length()+message3.length()+message1.length()+message2.length()+message0.length()+8,message.indexOf("*"));
-    	    message9 = message.substring(message8.length()+message7.length()+message6.length()+message5.length()+message4.length()+message3.length()+message1.length()+message2.length()+message0.length()+9,message.indexOf("¥"));
+    	    message9 = message.substring(message8.length()+message7.length()+message6.length()+message5.length()+message4.length()+message3.length()+message1.length()+message2.length()+message0.length()+9,message.indexOf("Â¥"));
     	    message10 = message.substring(message9.length()+message8.length()+message7.length()+message6.length()+message5.length()+message4.length()+message3.length()+message1.length()+message2.length()+message0.length()+10,message.length());
     
     	    
-    	    																					//    data1+"&"+data2+"#"+data3+"%"+data4+"$"+data5+"%"+data6+"¼"+data7+"½"+data8+"~"+data9+"*"+data10
+    	    																					//    data1+"&"+data2+"#"+data3+"%"+data4+"$"+data5+"%"+data6+"Â¼"+data7+"Â½"+data8+"~"+data9+"*"+data10
     	    
     	    
               System.out.println("onMessage::From=" + session.getId() + " Message=" + message);
@@ -608,7 +608,7 @@ public class SgetServer {
 				String result = "Date is 11/07/2021 19:19:30";
 				String dateToStr = dateFormat.format(date);
 				System.out.println("Date is "+ dateToStr);
-					session.getBasicRemote().sendText("receptiondatareussie"+"@"+data1+"&"+data2+"#"+data3+"$"+data4+"%"+data5+"¼"+data6+"½"+data7+"~"+data8+"*"+data9+"¥"+dateToStr+"");				          
+					session.getBasicRemote().sendText("receptiondatareussie"+"@"+data1+"&"+data2+"#"+data3+"$"+data4+"%"+data5+"Â¼"+data6+"Â½"+data7+"~"+data8+"*"+data9+"Â¥"+dateToStr+"");				          
 			
 			 
 			 } catch (IOException e) {
@@ -728,7 +728,7 @@ public class SgetServer {
 								System.out.println("Date is "+ dateToStr);
 							 
 								 session.getBasicRemote().sendText("receptioninit"+"@"+data1+"&"+data2+"#"+data3+"$"+data4+"%"
-								 +data5+"¼"+data6+"½"+data7+"~"+data8+"*"+data9+"¥"+data10+"^"+datedj+"?"+dateToStr+"!");	
+								 +data5+"Â¼"+data6+"Â½"+data7+"~"+data8+"*"+data9+"Â¥"+data10+"^"+datedj+"?"+dateToStr+"!");	
 								return ;
 			
 							 } catch (IOException e) {
