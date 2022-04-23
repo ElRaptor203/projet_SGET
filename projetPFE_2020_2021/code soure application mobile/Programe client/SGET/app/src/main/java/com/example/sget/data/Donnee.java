@@ -1,5 +1,8 @@
 package com.example.sget.data;
 
+
+/*** By El Raptor ***/
+
 public class Donnee {
 
         // local
