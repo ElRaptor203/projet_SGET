@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SGET</string>
+    <string name="title_home">Accueil</string>
+    <string name="title_dashboard">Tableau de bord</string>
+    <string name="title_notifications">Profile</string>
+    <string name="seconnecter">Se connecter</string>
+    <string name="sedeconnecter">Se deconnecter</string>
+    <string name="spinner_title">Select Category1</string>
+</resources>

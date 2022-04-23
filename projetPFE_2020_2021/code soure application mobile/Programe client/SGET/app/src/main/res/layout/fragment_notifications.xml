@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/photouser"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:strokeColor="@android:color/darker_gray"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+            android:src="@drawable/ic_user"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:fontFamily="@font/courgetteregular"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/tv11"
+            android:textSize="15dp"
+            android:textColor="@color/violet"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/photouser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nom : "
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv12"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/courgetteregular"
+            android:layout_below="@id/photouser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv11"
+            android:textSize="25dp"
+            android:text="ajouter une photo de profil"
+            android:gravity="center_horizontal"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv21"
+            android:fontFamily="@font/courgetteregular"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginTop="50dp"
+            android:textSize="15dp"
+            android:textColor="@color/violet"
+            android:layout_below="@id/tv11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="prenom : "
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv22"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/courgetteregular"
+            android:layout_below="@id/tv11"
+            android:layout_toRightOf="@id/tv21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:gravity="center_horizontal"
+            android:text="ajouter une photo de profil"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv31"
+            android:fontFamily="@font/courgetteregular"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/tv21"
+            android:textSize="15dp"
+            android:textColor="@color/violet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="matricule : "
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv32"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/tv21"
+            android:fontFamily="@font/courgetteregular"
+            android:layout_below="@id/tv21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:gravity="center_horizontal"
+            android:text="ajouter une photo de profil"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv41"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/courgetteregular"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_below="@id/tv31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/violet"
+            android:text="status : "
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv42"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/tv31"
+            android:fontFamily="@font/courgetteregular"
+            android:layout_toRightOf="@id/tv31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:gravity="center_horizontal"
+            android:text="ajouter une photo de profil"
+            android:layout_marginBottom="90dp"
+            >
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

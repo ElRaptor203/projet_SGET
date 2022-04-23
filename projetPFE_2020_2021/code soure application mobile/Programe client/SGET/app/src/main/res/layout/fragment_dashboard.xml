@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+  <RelativeLayout
+      android:layout_marginTop="20dp"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <RelativeLayout
+          android:id="@+id/r1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginTop="5dp"
+                  android:layout_marginBottom="5dp"
+                  android:fontFamily="@font/courgetteregular"
+                  android:text="jours"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:textSize="15dp"
+                  />
+              <Spinner
+                  android:id="@+id/spinnerjour"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:prompt="@string/spinner_title"
+                  />
+          </LinearLayout>
+
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:id="@+id/r2"
+          android:layout_toRightOf="@id/r1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="5dp"
+                  android:text="semaine"
+                  android:layout_marginBottom="5dp"
+                  android:textSize="15dp"
+                  android:layout_gravity="center_horizontal"
+                  android:fontFamily="@font/courgetteregular"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  />
+              <Spinner
+                  android:id="@+id/spinnersemaine"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:prompt="@string/spinner_title"
+                  />
+          </LinearLayout>
+
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:id="@+id/r3"
+          android:layout_marginTop="20dp"
+          android:layout_below="@id/r1"
+          android:layout_centerHorizontal="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+          <TextView
+              android:id="@+id/descrip_semaine"
+              android:layout_width="wrap_content"
+              android:text="15/06/2021 AU 22/06/2021"
+              android:textColor="@color/violet"
+              android:textAlignment="center"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:textSize="25dp"
+              android:fontFamily="@font/courgetteregular"
+              android:textAppearance="?android:attr/textAppearanceLarge"
+              android:gravity="center_horizontal">
+
+          </TextView>
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_marginTop="20dp"
+          android:id="@+id/d1"
+          android:layout_below="@id/r3"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <RelativeLayout
+              android:id="@+id/r4"
+              android:layout_marginTop="30dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:layout_gravity="center_horizontal"
+                  android:fontFamily="@font/courgetteregular"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:layout_width="wrap_content"
+                  android:text="7H30 - 9H30"
+                  android:textSize="15dp"
+                  android:textColor="@color/violet"
+                  android:layout_height="wrap_content">
+              </TextView>
+          </RelativeLayout>
+
+          <RelativeLayout
+              android:id="@+id/c1"
+              android:layout_toRightOf="@id/r4"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+              <androidx.cardview.widget.CardView
+                  android:id="@+id/cardmatiere1"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  card_view:cardCornerRadius="20dp"
+                  card_view:cardBackgroundColor="#E6E6E6"
+                  card_view:cardElevation="10dp"
+                  card_view:cardUseCompatPadding="true">
+
+                  <RelativeLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent">
+
+                      <RelativeLayout
+                          android:id="@+id/l1"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content">
+
+                          <TextView
+                              android:id="@+id/matiere1"
+                              android:textSize="20dp"
+                              android:gravity="center_horizontal"
+                              android:fontFamily="@font/courgetteregular"
+                              android:textAppearance="?android:attr/textAppearanceLarge"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:text="matiere"
+                              >
+
+                          </TextView>
+
+
+                      </RelativeLayout>
+
+                      <RelativeLayout
+                          android:id="@+id/l7"
+                          android:layout_below="@id/l1"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          >
+                          <TextView
+                              android:id="@+id/enseignent1"
+                              android:fontFamily="@font/courgetteregular"
+                              android:textAppearance="?android:attr/textAppearanceLarge"
+                              android:textColor="#E3F2FD"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:textAlignment="center"
+                              android:text="l'enseignant "
+                              android:textSize="20dp"
+                              android:gravity="center_horizontal">
+
+                          </TextView>
+
+                      </RelativeLayout>
+
+                  </RelativeLayout>
+
+              </androidx.cardview.widget.CardView>
+
+
+          </RelativeLayout>
+
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:id="@+id/d2"
+          android:layout_below="@id/d1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+          <RelativeLayout
+              android:id="@+id/r41"
+              android:layout_marginTop="30dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:layout_gravity="center_horizontal"
+                  android:fontFamily="@font/courgetteregular"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:layout_width="wrap_content"
+                  android:textSize="15dp"
+                  android:textColor="@color/violet"
+                  android:text="9H30 - 11H30"
+                  android:layout_height="wrap_content">
+              </TextView>
+          </RelativeLayout>
+
+          <RelativeLayout
+              android:id="@+id/c11"
+              android:layout_toRightOf="@id/r41"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+              <androidx.cardview.widget.CardView
+                  android:id="@+id/cardmatiere2"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  card_view:cardBackgroundColor="#E6E6E6"
+                  card_view:cardCornerRadius="20dp"
+                  card_view:cardElevation="10dp"
+                  card_view:cardUseCompatPadding="true">
+
+                  <RelativeLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent">
+
+                      <RelativeLayout
+                          android:id="@+id/l11"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content">
+
+                          <TextView
+                              android:id="@+id/matiere2"
+                              android:fontFamily="@font/courgetteregular"
+                              android:textAppearance="?android:attr/textAppearanceLarge"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:text="matiere"
+                              android:textAlignment="center"
+                              android:textSize="20dp"
+                              android:gravity="center_horizontal">
+
+                          </TextView>
+
+
+                      </RelativeLayout>
+
+                      <RelativeLayout
+                          android:id="@+id/l71"
+                          android:layout_below="@id/l11"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          >
+                          <TextView
+                              android:id="@+id/enseignent2"
+                              android:fontFamily="@font/courgetteregular"
+                              android:textAppearance="?android:attr/textAppearanceLarge"
+                              android:textColor="#E3F2FD"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:textAlignment="center"
+                              android:text="l'enseignant "
+                              android:textSize="20dp"
+                              android:gravity="center_horizontal">
+
+                          </TextView>
+
+                      </RelativeLayout>
+
+                  </RelativeLayout>
+
+              </androidx.cardview.widget.CardView>
+
+
+          </RelativeLayout>
+
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:id="@+id/d3"
+          android:layout_below="@id/d2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+          <RelativeLayout
+              android:id="@+id/r42"
+              android:layout_marginTop="30dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:layout_gravity="center_horizontal"
+                  android:fontFamily="@font/courgetteregular"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:layout_width="wrap_content"
+                  android:textSize="15dp"
+                  android:textColor="@color/violet"
+                  android:text="11H30 - 12H00"
+                  android:layout_height="wrap_content">
+              </TextView>
+          </RelativeLayout>
+
+          <RelativeLayout
+              android:id="@+id/c12"
+              android:layout_toRightOf="@id/r42"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+              <androidx.cardview.widget.CardView
+                  android:id="@+id/pause"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  card_view:cardBackgroundColor="#E6E6E6"
+                  card_view:cardCornerRadius="20dp"
+                  card_view:cardElevation="10dp"
+                  card_view:cardUseCompatPadding="true">
+
+                  <RelativeLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent">
+
+                      <RelativeLayout
+                          android:id="@+id/l72"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          >
+                          <TextView
+                              android:id="@+id/libelleMessageDeleguer2"
+                              android:fontFamily="@font/courgetteregular"
+                              android:textAppearance="?android:attr/textAppearanceLarge"
+                              android:textColor="#E3F2FD"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:textAlignment="center"
+                              android:text="pause "
+                              android:textSize="20dp"
+                              android:gravity="center_horizontal">
+
+                          </TextView>
+
+                      </RelativeLayout>
+
+                  </RelativeLayout>
+
+              </androidx.cardview.widget.CardView>
+
+
+          </RelativeLayout>
+
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:id="@+id/d4"
+          android:layout_below="@id/d3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+          <RelativeLayout
+              android:id="@+id/r43"
+              android:layout_marginTop="30dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:layout_gravity="center_horizontal"
+                  android:fontFamily="@font/courgetteregular"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:layout_width="wrap_content"
+                  android:text="12H00 - 14H00"
+                  android:textSize="15dp"
+                  android:textColor="@color/violet"
+                  android:layout_height="wrap_content">
+              </TextView>
+          </RelativeLayout>
+
+          <RelativeLayout
+              android:id="@+id/c13"
+              android:layout_toRightOf="@id/r43"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+              <androidx.cardview.widget.CardView
+                  android:id="@+id/cardmatiere3"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  card_view:cardBackgroundColor="#E6E6E6"
+                  card_view:cardCornerRadius="20dp"
+                  card_view:cardElevation="10dp"
+                  card_view:cardUseCompatPadding="true">
+
+                  <RelativeLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent">
+
+                      <RelativeLayout
+                          android:id="@+id/l13"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content">
+
+                          <TextView
+                              android:id="@+id/matiere3"
+                              android:fontFamily="@font/courgetteregular"
+                              android:textAppearance="?android:attr/textAppearanceLarge"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:text="matiere"
+                              android:textAlignment="center"
+                              android:textSize="20dp"
+                              android:gravity="center_horizontal">
+
+                          </TextView>
+
+
+                      </RelativeLayout>
+
+                      <RelativeLayout
+                          android:id="@+id/l73"
+                          android:layout_below="@id/l13"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          >
+                          <TextView
+                              android:id="@+id/enseignent3"
+                              android:fontFamily="@font/courgetteregular"
+                              android:textAppearance="?android:attr/textAppearanceLarge"
+                              android:textColor="#E3F2FD"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:textAlignment="center"
+                              android:text="l'enseignant "
+                              android:textSize="20dp"
+                              android:gravity="center_horizontal">
+
+                          </TextView>
+
+                      </RelativeLayout>
+
+                  </RelativeLayout>
+
+              </androidx.cardview.widget.CardView>
+
+
+          </RelativeLayout>
+
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:id="@+id/d5"
+          android:layout_marginBottom="50dp"
+          android:layout_below="@id/d4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+          <RelativeLayout
+              android:id="@+id/r44"
+              android:layout_marginTop="30dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:layout_gravity="center_horizontal"
+                  android:fontFamily="@font/courgetteregular"
+                  android:textAppearance="?android:attr/textAppearanceLarge"
+                  android:layout_width="wrap_content"
+                  android:text="14H00 - 16H00"
+                  android:textSize="15dp"
+                  android:textColor="@color/violet"
+                  android:layout_height="wrap_content">
+              </TextView>
+          </RelativeLayout>
+
+          <RelativeLayout
+              android:id="@+id/c14"
+              android:layout_toRightOf="@id/r44"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+              <androidx.cardview.widget.CardView
+                  android:id="@+id/cardmatiere4"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  card_view:cardBackgroundColor="#E6E6E6"
+                  card_view:cardCornerRadius="20dp"
+                  card_view:cardElevation="10dp"
+                  card_view:cardUseCompatPadding="true">
+
+                  <RelativeLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent">
+
+                      <RelativeLayout
+                          android:id="@+id/l14"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content">
+
+                          <TextView
+                              android:id="@+id/matiere4"
+                              android:fontFamily="@font/courgetteregular"
+                              android:textAppearance="?android:attr/textAppearanceLarge"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:text="matiere"
+                              android:textAlignment="center"
+                              android:textSize="20dp"
+                              android:gravity="center_horizontal">
+
+                          </TextView>
+
+
+                      </RelativeLayout>
+
+                      <RelativeLayout
+                          android:id="@+id/l74"
+                          android:layout_below="@id/l14"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          >
+                          <TextView
+                              android:id="@+id/enseignent4"
+                              android:fontFamily="@font/courgetteregular"
+                              android:textAppearance="?android:attr/textAppearanceLarge"
+                              android:textColor="#E3F2FD"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:textAlignment="center"
+                              android:text="l'enseignant "
+                              android:textSize="20dp"
+                              android:gravity="center_horizontal">
+
+                          </TextView>
+
+                      </RelativeLayout>
+
+                  </RelativeLayout>
+
+              </androidx.cardview.widget.CardView>
+
+
+          </RelativeLayout>
+
+      </RelativeLayout>
+
+  </RelativeLayout>
+
+</ScrollView>
