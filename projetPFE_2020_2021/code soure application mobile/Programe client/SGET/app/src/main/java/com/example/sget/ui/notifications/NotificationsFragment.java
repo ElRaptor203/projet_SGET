@@ -18,6 +18,7 @@ import com.squareup.picasso.MemoryPolicy;
 import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 
+/*** By El Raptor ***/
 
 public class NotificationsFragment extends Fragment {
 
