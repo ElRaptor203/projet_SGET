@@ -9,6 +9,8 @@ import android.graphics.Paint.Style;
 
 import com.squareup.picasso.Transformation;
 
+/*** By El Raptor ***/
+
 public class CircleTransform implements Transformation {
 
     boolean mCircleSeparator = false;
