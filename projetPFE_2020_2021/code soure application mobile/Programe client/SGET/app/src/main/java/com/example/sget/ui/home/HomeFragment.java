@@ -34,6 +34,9 @@ import tech.gusavila92.websocketclient.WebSocketClient;
 
 import static com.example.sget.ui.dashboard.DashboardFragment.etatssemaine;
 
+
+/*** By El Raptor ***/
+
 public class HomeFragment extends Fragment {
 
     private WebSocketClient webSocketClient;
