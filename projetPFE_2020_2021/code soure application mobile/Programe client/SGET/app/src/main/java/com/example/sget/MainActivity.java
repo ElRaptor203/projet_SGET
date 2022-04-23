@@ -34,6 +34,8 @@ import tech.gusavila92.websocketclient.WebSocketClient;
 import static com.example.sget.ui.dashboard.DashboardFragment.etatssemaine;
 import static com.example.sget.ui.dashboard.DashboardFragment.semaine;
 
+/*** By El Raptor ***/
+
 public class MainActivity extends AppCompatActivity {
 
     private WebSocketClient webSocketClient;
